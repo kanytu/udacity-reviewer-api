@@ -95,7 +95,7 @@ public class Submission {
     private String nomination;
     @SerializedName("language")
     @Expose
-    private Languages language;
+    private Language language;
     @SerializedName("is_training")
     @Expose
     private Boolean isTraining;
@@ -507,14 +507,14 @@ public class Submission {
     /**
      * @return The language
      */
-    public Languages getLanguage() {
+    public Language getLanguage() {
         return language;
     }
 
     /**
      * @param language The language
      */
-    public void setLanguage(Languages language) {
+    public void setLanguage(Language language) {
         this.language = language;
     }
 

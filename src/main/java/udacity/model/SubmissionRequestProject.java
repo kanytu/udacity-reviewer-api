@@ -10,7 +10,7 @@ public class SubmissionRequestProject {
     private Integer projectId;
     @SerializedName("language")
     @Expose
-    private Languages language;
+    private Language language;
 
     /**
      * @return ID of the Project of submissions being requested
@@ -29,14 +29,14 @@ public class SubmissionRequestProject {
     /**
      * @return Language code of submissions being requested = ['en-us', 'zh-cn', 'pt-br']
      */
-    public Languages getLanguage() {
+    public Language getLanguage() {
         return language;
     }
 
     /**
      * @param language The language
      */
-    public void setLanguage(Languages language) {
+    public void setLanguage(Language language) {
         this.language = language;
     }
 

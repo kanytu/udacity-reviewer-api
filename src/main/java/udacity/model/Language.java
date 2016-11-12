@@ -2,7 +2,7 @@ package udacity.model;
 
 import com.google.gson.annotations.SerializedName;
 
-public enum Languages {
+public enum Language {
     @SerializedName("en-us")
     EN_US,
     @SerializedName("zh-cn")

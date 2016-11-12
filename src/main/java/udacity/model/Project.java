@@ -10,7 +10,7 @@ import java.util.List;
 public class Project {
     @SerializedName("languages_to_recruit")
     @Expose
-    private List<Languages> languagesToRecruit = new ArrayList<Languages>();
+    private List<Language> languageToRecruit = new ArrayList<Language>();
     @SerializedName("id")
     @Expose
     private Integer id;
@@ -77,17 +77,17 @@ public class Project {
     private Boolean isCertProject;
 
     /**
-     * @return The languagesToRecruit
+     * @return The languageToRecruit
      */
-    public List<Languages> getLanguagesToRecruit() {
-        return languagesToRecruit;
+    public List<Language> getLanguageToRecruit() {
+        return languageToRecruit;
     }
 
     /**
-     * @param languagesToRecruit The languages_to_recruit
+     * @param languageToRecruit The languages_to_recruit
      */
-    public void setLanguagesToRecruit(List<Languages> languagesToRecruit) {
-        this.languagesToRecruit = languagesToRecruit;
+    public void setLanguageToRecruit(List<Language> languageToRecruit) {
+        this.languageToRecruit = languageToRecruit;
     }
 
     /**
@@ -387,7 +387,7 @@ public class Project {
     @Override
     public String toString() {
         return "Project{" +
-                "languagesToRecruit=" + languagesToRecruit +
+                "languageToRecruit=" + languageToRecruit +
                 ", id=" + id +
                 ", name='" + name + '\'' +
                 ", price='" + price + '\'' +

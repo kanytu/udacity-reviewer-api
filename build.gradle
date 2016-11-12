@@ -24,6 +24,7 @@ javadoc {
     source configurations.doc.collect { zipTree(it) }
     include '**/*.java'
     options.addStringOption('Xdoclint:none', '-quiet')
+    destinationDir = file("docs")
 }
 
 dependencies {
